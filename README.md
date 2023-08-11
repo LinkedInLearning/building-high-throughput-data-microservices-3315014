@@ -1,38 +1,47 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Building High Throughput Data Microservices
+This is the repository for the LinkedIn Learning course `Building High Throughput Data Microservices`. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![course-name-alt-text][lil-thumbnail-url] 
+## Overview 
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+Learn how to design, implement, and manage high throughput microservices for modern data architectures.
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+## Concept
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+Data is everywhere. Processing massive amounts of data requires microservices to be architected to meet many demands.
+In this course, instructor [Gregory Green](https://www.linkedin.com/in/gregory-green-5619748/) walks you through how to meet increasing data demands for Microservices by building scalable high-throughput architectures.
+Discover best practices for data patterns for throughput with flexible data services and multisite cloud-based use cases. Explore some of the most critical factors that affect data microservices. Dive deeper into antipatterns and the pros and cons of data technologies, with examples drawn from RabbitMQ, Postgres, Caching, and Spring. Along the way, Gregory gives you tips and pointers with hands-on demonstrations of how to successfully design and implement performant data microservices.
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+
+## Goals
+
+- Millions of payment transactions using [Spring](https://spring.io)/[Spring Boot](https://spring.io/projects/spring-boot)
+- Compare throughput
+  - relation databases: [Postgres](https://www.postgresql.org/)/[MySQL](https://www.mysql.com/) 
+  - Event Streaming: [Apache Kafka](https://kafka.apache.org)/[RabbitMQ Streams](https://www.rabbitmq.com/streams.html)
+
+
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
+
+[Mac Computer]
+
+- Homebrew - https://brew.sh/
+- RabbitMQ 3.12  - https://rabbitmq.com/install-homebrew.html
+- Java 17 https://formulae.brew.sh/formula/openjdk@17
+- MySQL - https://formulae.brew.sh/formula/mysql
+- Postgres - https://formulae.brew.sh/formula/postgresql@14
+- Prometheus https://formulae.brew.sh/formula/prometheus
+- Grafana https://grafana.com/docs/grafana/latest/setup-grafana/installation/mac/
+- Intelliji - https://www.jetbrains.com/idea/download/download-thanks.html?platform=macM1&code=IIC
+- Maven https://maven.apache.org/download.cgi
+
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
 
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
-
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+See https://www.linkedin.com/learning/
 
 
-by Gregory Green
+
+by [Gregory Green](https://www.linkedin.com/in/gregory-green-5619748/)

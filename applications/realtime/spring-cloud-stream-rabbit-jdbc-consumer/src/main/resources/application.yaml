@@ -1,0 +1,53 @@
+server:
+  port: 6001
+management:
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+spring:
+  application:
+    name: "rabbit-jdbc-consumer"
+  jpa:
+    hibernate:
+      ddl-auto: "none"
+  datasource:
+    initialization-mode: "always"
+    url: "jdbc:postgresql://localhost:5432/postgres"
+    username : postgres
+  liquibase:
+    change-log: "classpath:db/changelog/changelog-v1.sql"
+  cloud:
+    function:
+      definition: paymentSaveConsumer
+    stream:
+      default:
+        contentType: "application/json"
+      bindings:
+        paymentSaveConsumer-in-0:
+          destination: throughput.payment
+          group: payment
+          consumer:
+            concurrency: 1
+      rabbit:
+        bindings:
+          paymentSaveConsumer-in-0:
+            consumer:
+              autoBindDlq: true
+#              quorum.enabled: true
+              containerType: stream
+              queueNameGroupOnly: true
+#              quorum.enabled: true
+#              dlqQuorum:
+#                enabled: true
+              prefetch: 10000
+  rabbitmq:
+    stream:
+      name: payment

@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.linkedin</groupId>
+    <artifactId>microservices-high-throughput-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>microservices-high-throughput-parent</name>
+    <modules>
+        <module>components/throughput-domain</module>
+        <module>components/transaction-services</module>
+        <module>applications/batching/spring-batch-cvs-to-postgres</module>
+        <module>applications/batching/spring-batch-cvs-to-mysql</module>
+        <module>applications/batching/spring-batch-csv-to-rabbit-stream</module>
+        <module>applications/batching/spring-batch-csv-to-apache-kafka</module>
+        <module>applications/realtime/spring-cloud-stream-rabbit-jdbc-consumer</module>
+        <module>applications/realtime/spring-web-rabbit-stream-producer</module>
+    </modules>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>17</source>
+                        <target>17</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

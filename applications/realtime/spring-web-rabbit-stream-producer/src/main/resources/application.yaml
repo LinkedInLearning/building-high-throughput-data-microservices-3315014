@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-boot-rabbit-stream-producer
+  rabbitmq:
+    addresses: localhost:5672
+#
+management:
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+server:
+  tomcat:
+    threads:
+      min: 10 # Minimum amount of worker threads. default 10
+      max: 100 # dMaximum amount of worker threads. default 100
