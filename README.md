@@ -1,5 +1,11 @@
-# Building High Throughput Data Microservices
-This is the repository for the LinkedIn Learning course `Building High Throughput Data Microservices`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Building High-Throughput Data Microservices
+This is the repository for the LinkedIn Learning course Building High-Throughput Data Microservices. The full course is available from [LinkedIn Learning][lil-course-url].
+
+![Building High-Throughput Data Microservices][lil-thumbnail-url] 
+
+Microservices come with all kinds of great benefits. But they can be extremely difficult to manage well at scale. As organizations face the challenge of processing increasingly large volumes of data, they need to be able to build and maintain high-throughput data microservices. In this course, instructor Gregory Green covers the fundamental skills you need to know to meet today’s growing data demands with high-performance, scalable, high-throughput architectures.
+
+Discover best practices for data patterns for throughput with flexible data services and multisite cloud-based use cases. Explore some of the most critical factors that affect high-throughput requirements, before diving deeper into antipatterns and the pros and cons of data technologies. Along the way, Gregory provides examples with RabbitMQ, Postgres, MySQL, Spring, and Apache Kafka, offering tips and pointers with hands-on demonstrations of how to design and implement successful, high-throughput data microservices.
 
 ## Overview 
 
@@ -40,8 +46,12 @@ Discover best practices for data patterns for throughput with flexible data serv
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
 
 
-See https://www.linkedin.com/learning/
+### Instructor
 
+Gregory Green 
+                                        
 
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/gregory-green).
 
-by [Gregory Green](https://www.linkedin.com/in/gregory-green-5619748/)
+[lil-course-url]: https://www.linkedin.com/learning/building-high-throughput-data-microservices?dApp=59033956&leis=LAA
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQECo3pvhtIWBw/learning-public-crop_288_512/0/1696534957427?e=2147483647&v=beta&t=dH1mzKUWSXj6U1ift10qb_PbeYuTZl927ZMePYHsd8Q
