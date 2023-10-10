@@ -49,9 +49,17 @@ Discover best practices for data patterns for throughput with flexible data serv
 ### Instructor
 
 Gregory Green 
-                                        
+                            
+
+
+                            
 
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/gregory-green).
+
+[lil-course-url]: https://www.linkedin.com/learning/building-high-throughput-data-microservices?dApp=59033956&leis=LAA
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQECo3pvhtIWBw/learning-public-crop_288_512/0/1696534957427?e=2147483647&v=beta&t=dH1mzKUWSXj6U1ift10qb_PbeYuTZl927ZMePYHsd8Q
+
+
 
 [lil-course-url]: https://www.linkedin.com/learning/building-high-throughput-data-microservices?dApp=59033956&leis=LAA
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQECo3pvhtIWBw/learning-public-crop_288_512/0/1696534957427?e=2147483647&v=beta&t=dH1mzKUWSXj6U1ift10qb_PbeYuTZl927ZMePYHsd8Q
